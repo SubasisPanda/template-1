@@ -52,7 +52,13 @@ const plans = [
 export default function PricePage() {
   return (
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
+        
         <div className="text-center">
+            <div className="border bg-white/7 border-slate-200/25 backdrop-blur-md rounded-[9px] mb-10 max-w-fit mx-auto ">
+              <h3 className="inline-flex items-center text-center   px-4 py-1   tracking-[0.1em] text-slate-300">
+                PRICING
+              </h3>
+            </div>
           <h2 className="text-white sm:text-4xl md:text-5xl">
             Pricing That Fits Your Needs
           </h2>
@@ -66,13 +72,13 @@ export default function PricePage() {
           {plans.map((plan, idx) => (
             <div
               key={idx}
-              className={`relative flex flex-col rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-transform hover:scale-[1.02] hover:border-fuchsia-500/30 ${
+              className={`relative flex flex-col rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-transform hover:scale-[1.02] hover:border-slate-500/50 ${
                 plan.highlight
-                  ? "bg-gradient-to-b from-violet-600/30 to-fuchsia-600/20 border-fuchsia-500/40 shadow-[0_0_25px_rgba(168,85,247,0.25)]"
+                  ? "bg-gradient-to-b from-violet-600/35 to-violet-600/5 border-purple-500/40 shadow-[0_0_25px_rgba(168,85,247,0.25)]"
                   : ""
               }`}
             >
-              <h3 className="text-md font-semibold tracking-wide text-slate-300">
+              <h3 className="text-md  font-semibold mb-4 text-white">
                 {plan.name.toUpperCase()}
               </h3>
               <p className="mt-2 text-sm text-slate-400">{plan.description}</p>
@@ -84,10 +90,10 @@ export default function PricePage() {
               </div>
 
               <Button
-                className={`mt-8 w-full rounded-md  ${
+                className={`mt-8 w-full rounded-[8px] border border-slate-300/10  ${
                   plan.highlight
-                    ? "bg-gradient-to-r from-violet-400 to-fuchsia-400 text-black hover:from-violet-600 hover:to-fuchsia-600"
-                    : "bg-white/10 text-black hover:bg-white/20"
+                    ? "bg-gradient-to-b from-violet-600 to-violet-500 text-white hover:from-violet-800 hover:to-violet-700"
+                    : "bg-white/10 text-black hover:bg-white/20 text-white"
                 }`}
               >
                 Get Started
@@ -96,7 +102,7 @@ export default function PricePage() {
               <ul className="mt-8 space-y-3 text-sm text-slate-300">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <Check className="h-4 w-4 shrink-0 text-fuchsia-400" />
+                    <Check className="h-4 w-4 shrink-0 text-slate-400" />
                     <span>{feature}</span>
                   </li>
                 ))}

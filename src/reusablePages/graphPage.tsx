@@ -1,6 +1,11 @@
 function GraphPage() {
   return (
     <div className="mt-25 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+        <div className="border bg-violet-400/10 backdrop-blur-md border-white/10 rounded-[4px] mb-10  ">
+              <h4 className="inline-flex items-center text-center  px-4 py-1   tracking-[0.1em] text-slate-300">
+                FEATURE
+              </h4>
+            </div>
           <h4 className="text-2xl text-white sm:text-5xl md:text-5xl text-center">
             Unlock future of Vendor Management
             <span className="block">with Intelligent Analytics</span>
@@ -9,14 +14,14 @@ function GraphPage() {
             Empower your business with AI-driven insights, real-time tracking,
             and comprehensive historical data.
           </p>
-          <div className="mt-25 grid max-w-6xl gap-6 justify-center sm:grid-cols-1 lg:grid-cols-2 items-center space-evenly mt-10 ">
-            <div className="col-span-1 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start bg-white/[0.01] hover:bg-white/[0.03] transition-all">
+          <div className="mt-25  grid max-w-6xl gap-6 justify-center sm:grid-cols-1 lg:grid-cols-2 items-center space-evenly mt-10 ">
+            <div className="col-span-1 bg-violet-400/8 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start  hover:bg-violet-400/10 transition-all">
               <img
                 src="/Astra0.png"
                 alt=""
                 className="rounded-2xl border border-transparent"
               />
-              <h6 className="text-md font-medium text-white mt-3">
+              <h6 className="text-md  text-white mt-3">
                 Customizable Dashboards
               </h6>
               <p className="mt-2 text-sm text-slate-400">
@@ -24,13 +29,13 @@ function GraphPage() {
                 real-time data visualization.
               </p>
             </div>
-            <div className="col-span-1 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start bg-white/[0.01] hover:bg-white/[0.03] transition-all">
+            <div className="col-span-1 bg-violet-400/8 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start  hover:bg-violet-400/10 transition-all">
               <img
                 src="/Astra1.png"
                 alt=""
                 className="rounded-2xl border border-transparent"
               />
-              <h6 className="text-md font-medium text-white mt-3">
+              <h6 className="text-md  text-white mt-3">
                 Automated Reporting
               </h6>
               <p className="mt-2 text-sm text-slate-400">
@@ -38,13 +43,13 @@ function GraphPage() {
                 scheduling options.
               </p>
             </div>
-            <div className="col-span-1 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start  bg-white/[0.01] hover:bg-white/[0.03] transition-all">
+            <div className="col-span-1 bg-violet-400/8 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start  hover:bg-violet-400/10 transition-all">
               <img
                 src="/Astra2.png"
                 alt=""
                 className="rounded-2xl border border-transparent"
               />
-              <h6 className="text-md font-medium text-white mt-3">
+              <h6 className="text-md  text-white mt-3">
                 Integrations
               </h6>
               <p className="mt-2 text-sm text-slate-400">
@@ -52,13 +57,13 @@ function GraphPage() {
                 exchange.
               </p>
             </div>
-            <div className="col-span-1 border border-slate-300/20  rounded-2xl p-6 flex flex-col items-start bg-white/[0.01] hover:bg-white/[0.03] transition-all">
+            <div className="col-span-1 bg-violet-400/8 border border-slate-300/20  rounded-2xl p-6 flex flex-col items-start hover:bg-violet-400/10 transition-all">
               <img
                 src="/Astra3.png"
                 alt=""
                 className="rounded-2xl border border-transparent"
               />
-              <h6 className="text-md font-medium text-white mt-3">
+              <h6 className="text-md  text-white mt-3">
                 Monthly Tracking Graphs
               </h6>
               <p className="mt-2 text-sm text-slate-400">
