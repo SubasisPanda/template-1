@@ -1,140 +1,46 @@
 import HeroBackground from "@/components/backgrounds/herobackground";
-import { Database, BarChart3, Plane, Github, Slack, Zap, Star } from "lucide-react";
-
+import { LastSection } from "@/reusablePages/lastSection";
+import {
+  
+  Github,
+  Slack,
+  Zap,
+} from "lucide-react";
+import { FeaturesPage } from "@/reusablePages/featurePage";
+import TonyStark from "@/reusablePages/tonyStark";
+import GraphPage from "@/reusablePages/graphPage";
 function Features() {
-  const features = [
-    {
-      icon: <Plane className="h-6 w-6 text-fuchsia-400" />,
-      title: "AI-Powered Insights",
-      description:
-        "Upload data effortlessly. Our platform handles transactions, behavior, and trends.",
-    },
-    {
-      icon: <Database className="h-6 w-6 text-fuchsia-400" />,
-      title: "Real-Time Dashboards",
-      description:
-        "Upload data effortlessly. Our platform handles transactions, behavior, and trends.",
-    },
-    {
-      icon: <BarChart3 className="h-6 w-6 text-fuchsia-400" />,
-      title: "Automated Reporting",
-      description:
-        "Upload data effortlessly. Our platform handles transactions, behavior, and trends.",
-    },
-  ];
+
   return (
     <HeroBackground>
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start px-4 py-20 sm:px-6 md:py-28 lg:px-8">
-        <h1 className="text-xl  text-white">Explore our features</h1>
-        <p className="mt-4 text-sm text-slate-400">
-          Discover the powerful features that make our platform unique.
-        </p>
-        <div className="relative mt-25 mx-auto flex max-w-6xl flex-col items-center  overflow-hidden justify-start   ">
-          <img
-            src="/dashboardImage.png"
-            alt=""
-            className="w-full h-auto rounded-2xl "
-          />
-          <div className="absolute inset-x-0 bottom-0 h-50  backdrop-blur-lg [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
-        </div>
-        <div className="max-w-6xl mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, i) => (
-            <div
-              key={i}
-              className="group flex flex-col items-center justify-center rounded-2xl border border-white/10  p-8 text-center transition-all duration-300 hover:border-fuchsia-200/30 hover:bg-white/[0.01]"
-            >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-fuchsia-500/10 group-hover:bg-violet-300/20 transition-colors">
-                {feature.icon}
-              </div>
-              <h3 className="text-lg font-medium text-white">
-                {feature.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-400">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start px-4  sm:px-6  lg:px-8">
+        
 
-        <div className="mt-25 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start px-4 py-20 sm:px-6 md:py-28 lg:px-8">
-          <h4 className="text-2xl text-white sm:text-5xl md:text-5xl text-center">
-            Unlock future of Vendor Management
-            <span className="block">with Intelligent Analytics</span>
-          </h4>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
-            Empower your business with AI-driven insights, real-time tracking,
-            and comprehensive historical data.
-          </p>
-          <div className="mt-25 grid max-w-6xl gap-6 justify-center sm:grid-cols-1 lg:grid-cols-2 items-center space-evenly mt-10 ">
-            <div className="col-span-1 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start bg-white/[0.01] hover:bg-white/[0.03] transition-all">
-              <img
-                src="/Astra0.png"
-                alt=""
-                className="rounded-2xl border border-transparent"
-              />
-              <h6 className="text-md font-medium text-white mt-3">
-                Customizable Dashboards
-              </h6>
-              <p className="mt-2 text-sm text-slate-400">
-                Tailor dashboards to your needs with drag-and-drop widgets and
-                real-time data visualization.
-              </p>
-            </div>
-            <div className="col-span-1 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start bg-white/[0.01] hover:bg-white/[0.03] transition-all">
-              <img
-                src="/Astra1.png"
-                alt=""
-                className="rounded-2xl border border-transparent"
-              />
-              <h6 className="text-md font-medium text-white mt-3">
-                Automated Reporting
-              </h6>
-              <p className="mt-2 text-sm text-slate-400">
-                Generate reports automatically with customizable templates and
-                scheduling options.
-              </p>
-            </div>
-            <div className="col-span-1 border border-slate-300/20 rounded-2xl p-6 flex flex-col items-start  bg-white/[0.01] hover:bg-white/[0.03] transition-all">
-              <img
-                src="/Astra2.png"
-                alt=""
-                className="rounded-2xl border border-transparent"
-              />
-              <h6 className="text-md font-medium text-white mt-3">
-                Integrations
-              </h6>
-              <p className="mt-2 text-sm text-slate-400">
-                Connect with your favorite tools and platforms for seamless data
-                exchange.
-              </p>
-            </div>
-            <div className="col-span-1 border border-slate-300/20  rounded-2xl p-6 flex flex-col items-start bg-white/[0.01] hover:bg-white/[0.03] transition-all">
-              <img
-                src="/Astra3.png"
-                alt=""
-                className="rounded-2xl border border-transparent"
-              />
-              <h6 className="text-md font-medium text-white mt-3">
-                Monthly Tracking Graphs
-              </h6>
-              <p className="mt-2 text-sm text-slate-400">
-                Visualize your monthly performance with intuitive graphs and
-                analytics.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="mt-20 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start px-4 py-20 sm:px-6 md:py-28 lg:px-8">
-          <h4 className="text-2xl text-white sm:text-5xl md:text-5xl text-center">
+            <FeaturesPage />
+
+
+
+
+        
+
+        <GraphPage />
+
+        <div className="mt-10 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+            <div className="border bg-violet-400/10 backdrop-blur-md border-white/10 rounded-[4px] mb-10  ">
+              <h4 className="inline-flex items-center text-center  px-4 py-1   tracking-[0.1em] text-slate-300">
+                INTEGRATIONS
+              </h4>
+            </div>
+          <h4 className="text-2xl mt-5 text-white sm:text-5xl md:text-5xl text-center">
             Integrated with Your Favorite Tools
           </h4>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
-            Discover the simplicity of seamless integration with top platforms.
+          <p className="mx-auto mt-7 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
+            Discover the simplicity of seamless integration with AI blockchain platform.From data input to actionable insights, here's how it all comes together
           </p>
 
           <div className="max-w-6xl mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="group flex flex-col items-center justify-center rounded-2xl border border-white/10  p-8 text-center transition-all duration-300 hover:border-fuchsia-200/30 hover:bg-white/[0.01]">
+            <div className="group bg-violet-400/8 flex flex-col items-center justify-center rounded-2xl border border-transparent p-8 text-center transition-all duration-300 hover:border-slate-200/30 hover:bg-violet-400/10">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full   transition-colors">
                 <Github className="h-6 w-6" />
               </div>
@@ -143,7 +49,7 @@ function Features() {
                 Connect with thousands of apps for automated workflows.
               </p>
             </div>
-            <div className="group flex flex-col items-center justify-center rounded-2xl border border-white/10  p-8 text-center transition-all duration-300 hover:border-fuchsia-200/30 hover:bg-white/[0.01]">
+            <div className="group bg-violet-400/8 flex flex-col items-center justify-center rounded-2xl border border-transparent p-8 text-center transition-all duration-300 hover:border-fuchsia-200/30 hover:bg-violet-400/10">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full transition-colors">
                 <Zap className="h-6 w-6" />
               </div>
@@ -152,7 +58,7 @@ function Features() {
                 Connect with thousands of apps for automated workflows.
               </p>
             </div>
-            <div className="group flex flex-col items-center justify-center rounded-2xl border border-white/10  p-8 text-center transition-all duration-300 hover:border-fuchsia-200/30 hover:bg-white/[0.01]">
+            <div className="group bg-violet-400/8 flex flex-col items-center justify-center rounded-2xl border border-transparent p-8 text-center transition-all duration-300 hover:border-fuchsia-200/30 hover:bg-violet-400/10">
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full  transition-colors">
                 <Slack className="h-6 w-6" />
               </div>
@@ -164,68 +70,11 @@ function Features() {
           </div>
         </div>
 
-        {/* <div className="mt-20 mx-auto flex min-h-screen max-w-7xl border items-center justify-start  sm:px-6 md:py-28 lg:px-8">
-          <div className="flex-1 border-r border-slate-300/20 p-6">
-            <img src="https://i.pinimg.com/originals/ef/0d/ec/ef0dec7cb8b80b65ae925ccb9286f567.jpg" alt="Feature 1" className="rounded-lg max-w-50" />
-            <h4 className="text-lg font-medium text-white">Feature 1</h4>
-            <p className="mt-2 text-sm text-slate-400">
-              Al has revolutionized the way we manage our vendors. The real-time
-              insights and automated reports have saved us countless hours.
-            </p>
-          </div>
-        </div> */}
-
-
-        <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-lg shadow-fuchsia-500/5 backdrop-blur sm:p-10">
-        <div className="grid items-center gap-8 md:grid-cols-2">
-          {/* LEFT: content */}
-          <div className="order-2 md:order-1">
-            {/* stars */}
-            <div className="mb-4 flex items-center gap-1 text-violet-400">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-current" />
-              ))}
-            </div>
-
-            {/* quote */}
-            <blockquote className="text-balance text-xl font-medium leading-relaxed text-white sm:text-xl">
-              AI has revolutionized the way we manage our vendors. The real-time
-              insights and automated reports have saved us countless hours.
-            </blockquote>
-
-            {/* author */}
-            <div className="mt-6 space-y-1">
-              <a
-                href="#"
-                className="text-sm font-semibold text-fuchsia-400 hover:underline"
-              >
-                Tony Stark
-              </a>
-              <p className="text-sm text-slate-400">CEO and CTO of Stark Industries</p>
-            </div>
-
-            {/* company */}
-            <div className="mt-8 flex items-center gap-3">
-              <div className="h-8 w-8 rounded-full bg-fuchsia-500/20" />
-              <span className="text-sm font-medium text-slate-200">Stark Industries</span>
-            </div>
-          </div>
-
-          {/* RIGHT: image */}
-          <div className="order-1 md:order-2">
-            <div className="relative mx-auto aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-black/20">
-              <img
-                src="https://i.pinimg.com/originals/ef/0d/ec/ef0dec7cb8b80b65ae925ccb9286f567.jpg"        /* replace with your image path */
-                alt="Customer portrait"
-                className="h-full w-full object-cover"
-              />
-              {/* subtle inner vignette for depth */}
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className=""></div>
+        
+        <TonyStark />
+            <div className="w-30 h-40"></div>
+            <LastSection />
+        
       </div>
     </HeroBackground>
   );
