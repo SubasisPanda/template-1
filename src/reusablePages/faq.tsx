@@ -9,23 +9,19 @@ export default function FAQSection() {
   return (
     <section className="px-4 py-20 sm:px-6 lg:px-8 bg-transparent">
       <div className="mx-auto max-w-3xl text-center">
-        {/* Label */}
         <div className="inline-flex items-center bg-white/5 rounded-[6px] border border-white/10  px-3 py-0.5 text-[10px] font-medium tracking-[0.18em] text-slate-300">
           FAQS
         </div>
 
-        {/* Title */}
         <h2 className="mt-4 text-3xl font-semibold text-white sm:text-4xl">
           Frequently asked questions
         </h2>
 
-        {/* Subtitle */}
         <p className="mt-3 text-sm text-slate-400 ">
           Everything you need to know about the product and billing.
         </p>
       </div>
 
-      {/* Accordion */}
       <div className="mx-auto mt-10 max-w-2xl bg-transparent space-y-4">
         <Accordion type="single" collapsible className="w-full space-y-2">
           <AccordionItem

@@ -7,7 +7,7 @@ function SignUp() {
     function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    console.log(Object.fromEntries(data)); // TODO: hook up to your email service
+    console.log(Object.fromEntries(data)); 
   }
   return (
       <Background className="overflow-x-clip w-full rounded-3xl "> 

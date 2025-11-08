@@ -6,23 +6,19 @@ function TonyStark() {
    
       <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-fuchsia-500/5 backdrop-blur sm:p-10 hover:scale-[1.01]  transition-transform">
           <div className="grid items-center gap-8 md:grid-cols-2">
-            {/* LEFT: content */}
             <div className="order-2 md:order-1">
-              {/* stars */}
               <div className="mb-4 flex items-center gap-1 text-violet-400">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-current" />
                 ))}
               </div>
 
-              {/* quote */}
               <blockquote className="text-balance text-xl font-medium leading-relaxed text-white sm:text-xl">
                 AI has revolutionized the way we manage our vendors. The
                 real-time insights and automated reports have saved us countless
                 hours.
               </blockquote>
 
-              {/* author */}
               <div className="mt-6 space-y-1">
                 <a
                   href="#"
@@ -35,7 +31,6 @@ function TonyStark() {
                 </p>
               </div>
 
-              {/* company */}
               <div className="mt-8 flex items-center gap-3">
                 <div className="h-8 w-8 rounded-full bg-fuchsia-500/20" />
                 <span className="text-sm font-medium text-slate-200">
@@ -44,7 +39,6 @@ function TonyStark() {
               </div>
             </div>
 
-            {/* RIGHT: image */}
             <div className="order-1 md:order-2">
               <div className="relative mx-auto aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-black/20">
                 <img
@@ -52,7 +46,6 @@ function TonyStark() {
                   alt="Customer portrait"
                   className="h-full w-full object-cover"
                 />
-                {/* subtle inner vignette for depth */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
             </div>
