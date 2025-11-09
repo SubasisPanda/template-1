@@ -11,10 +11,9 @@ function Contact() {
                 CONTACT US
               </h3>
             </div>
-            <h1 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
+            <h2 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
               404, Page Not Found
-            </h1>
-            
+            </h2>
 
             <div className="flex flex-col items-center sm:flex-row gap-7 mt-8 sm:mt-10 ">
               <Button

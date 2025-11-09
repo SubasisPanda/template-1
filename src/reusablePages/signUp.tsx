@@ -13,9 +13,9 @@ function SignUp() {
       <Background className="overflow-x-clip w-full rounded-3xl "> 
           <div className="mx-auto max-h-50 flex min-h-fit  rounded-3xl border border-transparent bg-slate-100/3 max-w-6xl flex-col items-center justify-start px-4 py-20 w-full ">
             
-            <h1 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
+            <h2 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
               Sign up to Get Started
-            </h1>
+            </h2>
             <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
               Subscribe to get the latest updates and features.
             </p>

@@ -85,14 +85,14 @@ function landing() {
     <HeroBackground>
       <div className="mx-auto w-full flex min-h-screen max-w-6xl flex-col items-center justify-start px-4 py-20 ">
         <div className="border bg-violet-400/10 backdrop-blur-md rounded-[5px] border-slate-100/10 mb-10 ">
-          <h3 className="inline-flex items-center  text-center border border-white/10  px-4 py-1   tracking-[0.1em] text-slate-300">
+          <h3 className="inline-flex text-md items-center sm:text-xl text-center border border-white/10  px-4 py-1 text-slate-300">
             YOUR INTERNAL DEVELOPER PLATFORM
           </h3>
         </div>
-        <h1 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
+        <h2 className="text-4xl text-white sm:text-3xl md:text-6xl md:leading-[1.1] text-center">
           Transform Data into Actionable
           <span className="block">Insights Instantly</span>
-        </h1>
+        </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
           Leverage AI to generate real-time reports and make informed decisions
           faster than ever.
@@ -354,9 +354,9 @@ function landing() {
             HOW IT WORKS
           </h3>
         </div>
-        <h1 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
+        <h2 className="text-4xl text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
           Comprehensive tools for Optimal Vendor Management
-        </h1>
+        </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
           Explore the suite of powerful features designed to streamline your
           vendor management process, enhance decision-making, and drive business

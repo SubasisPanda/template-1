@@ -23,10 +23,10 @@ function Blogs() {
               <h3 className="inline-flex items-center text-center border bg-white/7 border-slate-200/25 backdrop-blur-md rounded-[9px]  px-4 py-1   tracking-[0.1em] text-slate-300">
                 RELEASE
               </h3>
-              <h1 className="text-4xl mt-5 text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
+              <h2 className="text-4xl mt-5 text-white sm:text-5xl md:text-6xl md:leading-[1.1] text-center">
           Optimize vendor performance: 
           <span className="block">Best Practices and Strategies</span>
-        </h1>
+        </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
           {new Date().toLocaleDateString("en-US", {
             year: "numeric",

@@ -55,11 +55,11 @@ export default function PricePage() {
         
         <div className="text-center">
             <div className="border bg-white/7 border-slate-200/25 backdrop-blur-md rounded-[9px] mb-10 max-w-fit mx-auto ">
-              <h3 className="inline-flex items-center text-center   px-4 py-1   tracking-[0.1em] text-slate-300">
+              <h3 className="inline-flex items-center  text-center   px-4 py-1   tracking-[0.1em] text-slate-300">
                 PRICING
               </h3>
             </div>
-          <h2 className="text-white sm:text-4xl md:text-5xl">
+          <h2 className="text-white text-4xl sm:text-5xl">
             Pricing That Fits Your Needs
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-sm text-slate-400 sm:mt-6   leading-relaxed">
