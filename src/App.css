@@ -14,7 +14,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #130e1c);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -40,7 +40,7 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: hwb(0 53% 47%);
 }
 
 @theme inline {

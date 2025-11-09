@@ -16,13 +16,11 @@ export default function Background({
   children,
   as = "div",
   className,
-  grid = true,
   imageUrl = "/Vector.png",
 }: Props) {
   const Tag = as as any;
   return (
     <Tag className={cx("relative isolate overflow-hidden", className)}>
-      {/* optional image layer */}
       {imageUrl && (
         <div className="absolute inset-0 -z-10
           [background-image:url('/Vector.png'),url('/ellipsehero.png')]

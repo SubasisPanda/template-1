@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Menu, X } from "lucide-react";
-import React, { useState } from "react";
+import  { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full  bg-[#0e0a14] backdrop-blur">
+    <header className="sticky top-0 z-50 w-full  bg-[#130e1c]  ">
       <div className=" flex h-16 items-center justify-between px-10 py-6 ">
         <div className="flex items-center gap-10">
           <a
@@ -38,9 +38,9 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:block ">
-          <Button className="flex items-center w-fit gap-1">
+          <Button className="flex items-center w-fit">
             Get Started
-            <ChevronRight className="h-4 w-4" />
+            <ChevronRight className="h-4 w-4 mt-auto" />
           </Button>
         </div>
 

@@ -7,8 +7,8 @@ import {
 
 export default function FAQSection() {
   return (
-    <section className="px-4 py-20 sm:px-6 lg:px-8 bg-transparent">
-      <div className="mx-auto max-w-3xl text-center">
+    <section className="px-4 py-20 w-full mb-10 sm:px-6 lg:px-8 bg-transparent">
+      <div className="mx-auto max-w-3xl w-full text-center">
         <div className="inline-flex items-center bg-white/5 rounded-[6px] border border-white/10  px-3 py-0.5 text-[10px] font-medium tracking-[0.18em] text-slate-300">
           FAQS
         </div>

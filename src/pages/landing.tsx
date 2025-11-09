@@ -2,10 +2,31 @@ import { Button } from "@/components/ui/button";
 import HeroBackground from "@/components/backgrounds/herobackground";
 import GraphPage from "@/reusablePages/graphPage";
 import PricePage from "@/reusablePages/pricePage";
-import { Box, Infinity ,ChevronRight } from "lucide-react";
-import { FeaturesPage } from "@/reusablePages/featurePage";
+import {
+  Box,
+  Infinity,
+  ChevronRight,
+
+} from "lucide-react";
+// import { FeaturesPage } from "@/reusablePages/featurePage";
 import { FAQSection } from "@/reusablePages/faq";
 import { LastSection } from "@/reusablePages/lastSection";
+
+function FeatureTile({
+  title,
+  desc,
+}: {
+  title: string;
+  desc: string;
+}) {
+  return (
+    <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+     
+      <h3 className="text-md  text-white">{title}</h3>
+      <p className="mt-4 text-sm  text-slate-400">{desc}</p>
+    </article>
+  );
+}
 function landing() {
   const items = [
     {
@@ -35,16 +56,34 @@ function landing() {
   ];
 
   const logos = [
-  { src: "https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg", name: "Webflow" },
-  { src: "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/65ab316a98b1254dc17f79f1_relume%20logo%20symbol%20with%20shadow.png", name: "Relume" },
-  { src: "https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg", name: "Webflow" },
-  { src: "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/65ab316a98b1254dc17f79f1_relume%20logo%20symbol%20with%20shadow.png", name: "Relume" },
-  { src: "https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg", name: "Webflow" },
-  { src: "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/65ab316a98b1254dc17f79f1_relume%20logo%20symbol%20with%20shadow.png", name: "Relume" },
-];
+    {
+      src: "https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg",
+      name: "Webflow",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/65ab316a98b1254dc17f79f1_relume%20logo%20symbol%20with%20shadow.png",
+      name: "Relume",
+    },
+    {
+      src: "https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg",
+      name: "Webflow",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/65ab316a98b1254dc17f79f1_relume%20logo%20symbol%20with%20shadow.png",
+      name: "Relume",
+    },
+    {
+      src: "https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg",
+      name: "Webflow",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/65ab316a98b1254dc17f79f1_relume%20logo%20symbol%20with%20shadow.png",
+      name: "Relume",
+    },
+  ];
   return (
     <HeroBackground>
-      <div className="mx-auto w-full flex min-h-screen max-w-7xl flex-col items-center justify-start px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+      <div className="mx-auto w-full flex min-h-screen max-w-6xl flex-col items-center justify-start px-4 py-20 ">
         <div className="border bg-violet-400/10 backdrop-blur-md rounded-[5px] border-slate-100/10 mb-10 ">
           <h3 className="inline-flex items-center  text-center border border-white/10  px-4 py-1   tracking-[0.1em] text-slate-300">
             YOUR INTERNAL DEVELOPER PLATFORM
@@ -78,7 +117,7 @@ function landing() {
           <img src="/dashboardImage.png" className="rounded-2xl" alt="" />
         </div>
         <section className="w-full py-8 sm:py-12 mb-30 bg-transparent">
-      <style>{`
+          <style>{`
         @keyframes marquee {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
@@ -94,48 +133,46 @@ function landing() {
         }
       `}</style>
 
-      <div className="mx-auto mb-15 max-w-7xl px-4 text-center">
-        <p className="text-[10px] tracking-[0.22em] text-slate-400 uppercase">
-          Used by the world's most average companies
-        </p>
-      </div>
+          <div className="mx-auto mb-15 max-w-7xl px-4 text-center">
+            <p className="text-[10px] tracking-[0.22em] text-slate-400 uppercase">
+              Used by the world's most average companies
+            </p>
+          </div>
 
-      <div
-        className="
+          <div
+            className="
           marquee relative mx-auto mt-6 max-w-7xl overflow-hidden px-4
           [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
         "
-        aria-label="Trusted by logos"
-      >
-        <div className="marquee-track flex w-[200%] items-center justify-around gap-16 sm:gap-20">
-          {[...logos, ...logos].map((logo, i) => (
-            <div
-              key={i}
-              className="flex min-w-max items-center justify-center gap-2 sm:gap-2 opacity-50 hover:opacity-80 transition-opacity"
-            >
-              <img
-                src={logo.src}
-                alt={logo.name}
-                className="h-6 w-auto sm:h-7 grayscale justify-center items-center brightness-125"
-                loading="lazy"
-              />
-              <span className="text-sm sm:text-lg font-semibold justify-center items-center text-slate-400">
-                {logo.name}
-              </span>
+            aria-label="Trusted by logos"
+          >
+            <div className="marquee-track flex w-[200%] items-center justify-around gap-16 sm:gap-20">
+              {[...logos, ...logos].map((logo, i) => (
+                <div
+                  key={i}
+                  className="flex min-w-max items-center justify-center gap-2 sm:gap-2 opacity-50 hover:opacity-80 transition-opacity"
+                >
+                  <img
+                    src={logo.src}
+                    alt={logo.name}
+                    className="h-6 w-auto sm:h-7 grayscale justify-center items-center brightness-125"
+                    loading="lazy"
+                  />
+                  <span className="text-sm sm:text-lg font-semibold justify-center items-center text-slate-400">
+                    {logo.name}
+                  </span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-        
+          </div>
+        </section>
 
         <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12 lg:space-y-14">
           <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 md:p-10 shadow-lg shadow-fuchsia-500/5">
             <div className="grid items-center gap-8 md:grid-cols-2">
               <div className="relative overflow-hidden rounded-2xl border border-white/10">
                 <img
-                  src="/Astra4.png" 
+                  src="/Astra4.png"
                   alt="AI analytics"
                   className="h-full w-full object-cover"
                 />
@@ -162,11 +199,13 @@ function landing() {
                       <Box className="mt-0.5 h-4 w-4 shrink-0 text-slate-300" />
                       <div>
                         <p className="text-sm font-semibold text-slate-200">
-                          Predictive Insights: 
-                          <span className="text-sm text-slate-400"> Anticipate future vendor performance and potential
-                          issues before they arise.</span>
+                          Predictive Insights:
+                          <span className="text-sm text-slate-400">
+                            {" "}
+                            Anticipate future vendor performance and potential
+                            issues before they arise.
+                          </span>
                         </p>
-                        
                       </div>
                     </div>
                   </li>
@@ -177,11 +216,12 @@ function landing() {
                       <div>
                         <p className="text-sm font-semibold text-slate-200">
                           Customizable Analytics:
-                          <span className="text-sm text-slate-400"> Tailor the AI analytics to focus on the metrics that
-                          matter most to your business.
-                        </span>
+                          <span className="text-sm text-slate-400">
+                            {" "}
+                            Tailor the AI analytics to focus on the metrics that
+                            matter most to your business.
+                          </span>
                         </p>
-                        
                       </div>
                     </div>
                   </li>
@@ -213,12 +253,13 @@ function landing() {
                       <Box className="mt-0.5 h-4 w-4 shrink-0 text-slate-300" />
                       <div>
                         <p className="text-sm font-semibold text-slate-200">
-                          Interactive Dashboards: 
-                           <span className="text-sm text-slate-400 "> Dive deeper into data with interactive and
-                          user-friendly dashboards.
-                        </span>
+                          Interactive Dashboards:
+                          <span className="text-sm text-slate-400 ">
+                            {" "}
+                            Dive deeper into data with interactive and
+                            user-friendly dashboards.
+                          </span>
                         </p>
-                       
                       </div>
                     </div>
                   </li>
@@ -228,12 +269,13 @@ function landing() {
                       <Box className="mt-0.5 h-4 w-4 shrink-0 text-slate-300" />
                       <div>
                         <p className="text-sm font-semibold text-slate-200">
-                          Historical Comparisons: 
-                           <span className="text-sm text-slate-400 "> Compare current performance with historical data to
-                          identify trends and make informed decisions.
-                        </span>
+                          Historical Comparisons:
+                          <span className="text-sm text-slate-400 ">
+                            {" "}
+                            Compare current performance with historical data to
+                            identify trends and make informed decisions.
+                          </span>
                         </p>
-                       
                       </div>
                     </div>
                   </li>
@@ -250,7 +292,61 @@ function landing() {
             </div>
           </div>
         </section>
-        <FeaturesPage />
+
+        <section className="px-4 py-16 mt-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <span className="inline-flex items-center rounded-[4px] border border-white/10 bg-white/5 px-3 py-1 text-[10px] tracking-[0.18em] text-slate-300">
+              FEATURE
+            </span>
+            <h2 className="mt-5 text-3xl  text-white sm:text-4xl">
+              Transform Your Management with Powerful
+              <br className="hidden sm:block" /> Features
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-sm text-slate-400 sm:text-base">
+              From AI-driven analytics to customizable dashboards, our features
+              empower you to make data-driven decisions and enhance operational
+              efficiency.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-6xl">
+            <div
+              className="
+            relative rounded-3xl border border-white/10 bg-white/[0.03] p-2 sm:p-3
+            
+          "
+            >
+              <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-white/10" />
+            
+              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/20">
+                <img
+                  src="/dashboard2.png" 
+                  alt="Product dashboard"
+                  className="block w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-8 max-w-6xl">
+            <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+              <FeatureTile
+                title="Comprehensive Statistics"
+                desc="Explore detailed historical statistics to identify long-term trends and patterns."
+              />
+              <FeatureTile
+                title="Customizable Dashboards"
+                desc="Create personalized dashboards focused on the metrics that matter most."
+              />
+              <FeatureTile
+                title="Automated Reporting"
+                desc="Generate reports automatically to ensure accuracy and save valuable time."
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* <FeaturesPage /> */}
         <GraphPage />
 
         <div className="border mt-20 bg-violet-400/10 backdrop-blur-md rounded-[5px] border-slate-100/10 mb-10 ">
@@ -262,8 +358,9 @@ function landing() {
           Comprehensive tools for Optimal Vendor Management
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-slate-400 sm:mt-6 leading-relaxed">
-          Explore the suite of powerful features designed to streamline your vendor management process,
-enhance decision-making, and drive business success.
+          Explore the suite of powerful features designed to streamline your
+          vendor management process, enhance decision-making, and drive business
+          success.
         </p>
 
         <div className="flex flex-col items-center sm:flex-row gap-7 mt-8 sm:mt-10">
