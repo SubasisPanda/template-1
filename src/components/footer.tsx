@@ -88,7 +88,7 @@ export default function Footer() {
             <ul className="mt-3 space-y-2 text-sm text-slate-400">
               <li>
                 <Link
-                  to="/privacy"
+                  to="/terms"
                   className="hover:text-violet-400 transition-colors"
                 >
                   Privacy
@@ -104,10 +104,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/404"
+                  to="/contact"
                   className="hover:text-violet-400 transition-colors"
                 >
-                  404
+                  Contact
                 </Link>
               </li>
             </ul>

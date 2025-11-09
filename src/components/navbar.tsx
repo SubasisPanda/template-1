@@ -111,3 +111,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+export { Navbar };
